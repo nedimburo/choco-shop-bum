@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choco shop BUM - Login</title>
+
+    <!-- DODATNI FONTOVI -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Oswald&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="ikonice/ikonica.png">
+</head>
+<body>
+    <div class="home-holder">
+        <a href="index.html">
+            <img class="home-img" alt="Home" src="ikonice/home.png">
+        </a>
+    </div>
+    <div id="login-holder">
+        <h1>LOGIN</h1>
+        <p class="login-text">Prijavite se na svoj korisnički račun.</p>
+        <form method="post" action="/login">
+            <label for="login_email">E-Mail:</label>
+            <input type="email" id="login_email" required><br>
+            
+            <label for="login_password">Šifra:</label>
+            <input type="password" id="login_password" required><br>
+            <div class="login-small-container">
+                <button id="login-button" type="submit">Prijavi se</button>
+            </div>
+        </form>
+        <p class="login-info">Nemate korisnički račun?</p>
+        <div class="login-small-container">
+            <a class="login-register-button" href="register.html">REGISTRUJ SE</a>
+        </div>
+    </div>
+</body>
+</html>
