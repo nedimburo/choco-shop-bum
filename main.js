@@ -235,13 +235,3 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 4000);
 }
-
-// PRELOADER
-
-var loader=document.getElementById("preload-stranice");
-function forceTimeout(){
-  loader.style.display="none";
-}
-window.addEventListener("load", function(){
-  this.setTimeout(forceTimeout, 3000)
-})

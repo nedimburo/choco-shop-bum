@@ -33,42 +33,6 @@ a{
 label{
     font-family: 'Roboto', sans-serif;
 }
-/* PRELOAD */
-#preload-stranice{
-    background: #ffe0b5;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    animation: fade-out;
-    animation-duration: 4s;
-}
-#preload-container{
-    width: 150px;
-    height: 150px;
-    margin: 40vh auto;
-}
-.preload-img{
-    width: 100%;
-    height: 100%;
-    animation: rotacijaloga 3s;
-}
-#preload-stranice>div>p{
-    color: #732D0A;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    width: 150px;
-}
-@keyframes rotacijaloga{
-    from{transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-@keyframes fade-out {
-    0%, 60% {opacity: 1;}
-    95% {opacity: 0.1;}
-}
 /* SIDEBAR */
 .sidenav {
     height: 100%; 
@@ -105,9 +69,12 @@ label{
     right: 25px;
     font-size: 2.4rem;
     margin-left: 50px;
+    padding-top: 8px;
 }
 .sidenav .closebtn:hover{
     border-bottom: none;
+    background: none;
+    color: #111;
 }
 /* HEADER */
 #header{
@@ -925,6 +892,9 @@ label{
     font-weight: bold;
     padding: 5px;
     font-family: 'Roboto', sans-serif;
+}
+.ponuda-list-name{
+    font-family: 'Acme', sans-serif;
 }
 .ponuda-list-picture{
     width: 100%;
